@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+data/
+.git/
+.env
+rsa_key.p8
+rsa_key.pub
+markets_dbt/target/
+markets_dbt/logs/
+.tmp_dagster_home*/
