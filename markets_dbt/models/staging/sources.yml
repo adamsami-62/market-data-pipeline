@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: MARKETS
+    schema: RAW
+    meta:
+      dagster:
+        asset_key: ["loaded"]
+    tables:
+      - name: daily_prices

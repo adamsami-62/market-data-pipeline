@@ -1,0 +1,45 @@
+# --- Secrets & credentials ---
+.env
+.env.*
+!.env.example
+Key Details.txt
+rsa_key.p8
+rsa_key.pub
+*.p8
+*.pem
+*.key
+*.p12
+*.pfx
+profiles.yml
+.user.yml
+
+# --- Logs (dbt logs contain Snowflake account/user and local paths) ---
+logs/
+*.log
+
+# --- Dagster local state (run history, compute logs) ---
+.tmp_dagster_home_*/
+.dagster/
+dagster_home/
+
+# --- dbt build artifacts ---
+markets_dbt/target/
+markets_dbt/dbt_packages/
+markets_dbt/logs/
+
+# --- Generated data ---
+data/
+
+# --- Python ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# --- Editor / OS / tooling ---
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+desktop.ini
+.DS_Store

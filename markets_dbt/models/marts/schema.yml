@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fact_daily_prices
+    columns:
+      - name: ticker
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_ticker')
+              field: ticker
+      - name: trade_date
+        tests: [not_null]
+      - name: close
+        tests: [not_null]
